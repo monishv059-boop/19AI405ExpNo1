@@ -42,10 +42,12 @@
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
 
 <h3>Program:</h3>
+
+
+
+
 ~~~
-
 import random
-
 class HealthMonitoringAgent:
     def __init__(self, patient_data):
         self.patient_data = patient_data
