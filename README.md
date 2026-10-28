@@ -40,12 +40,16 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
-Program:
+
+<h3>Program:</h3>
+~~~
+
 import random
 
 class HealthMonitoringAgent:
     def __init__(self, patient_data):
         self.patient_data = patient_data
+      
 
     def monitor_health(self):
         while True:
@@ -66,7 +70,7 @@ class HealthMonitoringAgent:
         else:
             return "No specific action needed"
 
-
+~~~
 class HealthSensors:
     def get_health_state(self):
         return {
@@ -96,7 +100,7 @@ if __name__ == "__main__":
     health_monitoring_agent.actuators = health_actuators
 
     health_monitoring_agent.monitor_health()
-
+~~~
 <h3>Output:</h3>
 <img width="582" height="92" alt="image" src="https://github.com/user-attachments/assets/75254eb9-bee4-4eab-96d3-310d674350a2" />
 
